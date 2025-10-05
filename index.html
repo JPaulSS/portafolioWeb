@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño y js/style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo">JeanP.Dev</div>
+        <nav>
+            <ul>
+                <li><button onclick="scrollToSection('sobre-mi')">Sobre mí</button></li>
+                <li><button onclick="scrollToSection('habilidades')">Habilidades</button></li>
+                <li><button onclick="scrollToSection('proyectos')">Proyectos</button></li>
+                <li><button onclick="scrollToSection('certificados')">Certificados</button></li>
+                <li><button onclick="scrollToSection('contactos')">Contactos</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="sobre-mi">
+        <div class="container">
+            <h2>Hola, soy<br>Jean Paul Sarria Suaza</h2>
+            <p>Soy desarrollador de Software y páginas web desde el 2024, apasionado por crear softwares dinámicos, útiles y con interfaces bonitas.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="iconos">
+                <div class="skill-item">
+                    <img src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png" alt="HTML5" class="mi-img">
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS3" class="mi-img">
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="JavaScript" class="mi-img">
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png" alt="Python" class="mi-img">
+                    <span class="skill-name">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="grid-proyectos">
+                <div class="proyecto">
+                    <div class="proyecto-img"></div>
+                    <div class="proyecto-content">
+                        <h3>En proceso</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto-img"></div>
+                    <div class="proyecto-content">
+                        <h3>En proceso</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto-img"></div>
+                    <div class="proyecto-content">
+                        <h3>En proceso</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto-img">💼</div>
+                    <div class="proyecto-content">
+                        <h3>Portafolio Personal</h3>
+                        <p>Mi portafolio profesional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificados">
+        <div class="container">
+            <h2>Certificados</h2>
+            <div class="grid-certificados">
+                <div class="certificado-card" onclick="openModal(0)">
+                    <div class="certificado-preview">
+                        <img src="imagenes/descarga.png" alt="imagene">
+                    </div>
+                    <h3>Desarrollo con IA</h3>
+                    <p>Certificado de desarrollo con Inteligencia Artificial</p>
+                </div>
+                <!-- los otros aca-->
+            </div>
+        </div>
+
+        <div id="certificadoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="nav-button prev" onclick="changeSlide(-1)">❮</button>
+                <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+                <button class="nav-button next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactos">
+        <div class="container">
+            <h2>Contactos</h2>
+            <p>¿Interesado en trabajar juntos? ¡No dudes en contactarme!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Suazajeanpaul747@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Telefono</h3>
+                    <p>3186244937</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <p>github.com/JPaulSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Jean Paul Sarria Suaza. Todos los derechos reservados.</p>
+</footer>
+
+<script src="diseño y js/script.js"></script>
+
+</body>
+</html>
