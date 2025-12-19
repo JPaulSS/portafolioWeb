@@ -245,6 +245,38 @@ section {
     color: #999;
 }
 
+.proyecto-img {
+    overflow: hidden;
+}
+
+.proyecto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.certificado-preview {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.certificado-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.grid-proyectos,
+.grid-certificados {
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .proyecto-content {
     padding: 1.5rem;
 }
@@ -322,6 +354,7 @@ section {
     color: #666;
     font-size: 0.9rem;
 }
+
 
 .modal {
     display: none;
