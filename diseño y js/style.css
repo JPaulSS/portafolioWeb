@@ -64,6 +64,46 @@ nav button:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
+/* ===== MENÚ HAMBURGUESA ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* MODO MÓVIL */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
 
 /* Main content */
 main {
@@ -498,3 +538,41 @@ html {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
